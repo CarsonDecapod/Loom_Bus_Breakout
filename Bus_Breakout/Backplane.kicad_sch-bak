@@ -1,0 +1,436 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3ac54b92-3728-49be-9412-cc6fd82c635a")
+	(paper "USLetter")
+	(title_block
+		(title "Loom_Backplane")
+		(company "Decapod Devices")
+	)
+	(lib_symbols
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 38.1 132.08) (xy 34.29 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dba94f1-e3d2-4fe5-b263-bae46920903c")
+	)
+	(wire
+		(pts
+			(xy 38.1 134.62) (xy 38.1 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95d18809-35fa-4d38-8b92-eceac53b8a71")
+	)
+	(text "The Loom Backplane is the hub for compatible modules\nIt is a simple passive interconnect\nThere are 32 digital pins, D1-D32\nThere are 32 analog pins, A1-A32\nPins A1-A16 are intended to be safe for microcontroller levels\nPins A17-A32 are inteded to be for analog signals that are not safe for microcontrollers \nThere are 8 power pins, PWR1-PWR4 and APWR1-APWR4\nThere are 8 independent ground pins, GND1-GND4 and AGND1-AGND4"
+		(exclude_from_sim no)
+		(at 16.51 39.116 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left)
+		)
+		(uuid "c5b65820-2b02-4eee-a67e-9a47222017e5")
+	)
+	(text "Loom Backplane"
+		(exclude_from_sim no)
+		(at 16.256 21.59 0)
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.8)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "f55e5847-a42d-4dbf-8c9c-b7b56367e0e4")
+	)
+	(global_label "GND_PLANE"
+		(shape input)
+		(at 34.29 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a9fba456-90d3-4eed-bc46-f99045ae7760")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.6005 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19ba85ca-b454-457d-aba5-7507314869ae")
+		(property "Reference" "#PWR01"
+			(at 38.1 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d58d72b-e2c9-4dfa-ba4d-0c77568a4eae")
+		)
+		(instances
+			(project ""
+				(path "/3ac54b92-3728-49be-9412-cc6fd82c635a"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 100.33)
+		(size 34.29 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0139e005-4cfa-48e0-a14e-be1579ead2cc")
+		(property "Sheetname" "Face_Connector2"
+			(at 120.65 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Face_Connector.kicad_sch"
+			(at 120.65 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/3ac54b92-3728-49be-9412-cc6fd82c635a"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 167.64 100.33)
+		(size 34.29 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "43575b50-3268-4912-990c-61174afa3532")
+		(property "Sheetname" "Face_Connector3"
+			(at 167.64 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Face_Connector.kicad_sch"
+			(at 167.64 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/3ac54b92-3728-49be-9412-cc6fd82c635a"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 72.39 100.33)
+		(size 34.29 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8dcbfaba-c102-4c4e-957d-ae9122f1990d")
+		(property "Sheetname" "Face_Connector1"
+			(at 72.39 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Face_Connector.kicad_sch"
+			(at 72.39 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/3ac54b92-3728-49be-9412-cc6fd82c635a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 62.23)
+		(size 34.29 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a0eb7df6-1d4d-4d84-b850-590deb2dac31")
+		(property "Sheetname" "Female_Edge_Connector1"
+			(at 120.65 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Female_Edge_Connector.kicad_sch"
+			(at 120.65 88.2146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/3ac54b92-3728-49be-9412-cc6fd82c635a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 137.795)
+		(size 34.29 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a90fa690-4175-4a85-ad71-4c71b925e57e")
+		(property "Sheetname" "Male_Edge_Connector1"
+			(at 120.65 137.0834 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Male_Edge_Connector.kicad_sch"
+			(at 120.65 163.7796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Backplane"
+				(path "/3ac54b92-3728-49be-9412-cc6fd82c635a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
